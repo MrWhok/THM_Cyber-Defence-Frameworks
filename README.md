@@ -2,6 +2,7 @@
 
 ## Table of Contents
 1. [Pyramid Of Pain](#pyramid-of-pain)
+2. [Cyber Kill Chain](#cyber-kill-chain)
 
 ## Pyramid Of Pain
 ### Hash Values
@@ -83,3 +84,57 @@
     ![alt text](<Assets/Tactics, Techniques, and Procedures (TTPs) - 1.png>)
 
     The flag is `THM{PYRAMIDS_COMPLETE}`.
+
+
+## Cyber Kill Chain
+### Reconnaissance
+1. What is the name of the Intel Gathering Tool that is a web-based interface to the common tools and resources for open-source intelligence?
+
+    The answer is `OSINT Framework`.
+
+2. What is the definition for the email gathering process during the stage of reconnaissance?
+
+    The answer is `Email harvesting`.
+
+### Weaponization
+1. What is the term for automated scripts embedded in Microsoft Office documents that can be used to perform tasks or exploited by attackers for malicious purposes?
+
+    The answer is `Macro`.
+
+### Delivery
+1. What do you call an attack targeting a specific group by infecting their frequently visited website?
+
+    The answer is `Watering Hole Attack`.
+
+### Exploitation
+1. What is the term for a cyber attack that exploits a software vulnerability that is unknown by software vendors?
+
+    The answer is `Zero-Day`.
+
+### Installation
+1. What technique is used to modify file time attributes to hide new or changes to existing files?
+
+    The answer is `Timestomping`.
+
+2. What malicious script can be planted by an attacker on the web server to maintain access to the compromised system and enables the web server to be accessed remotely?
+
+    The answer is `Web Shell`.
+
+### Command and Control (C2)
+1. What is the C2 communication where the victim makes regular DNS requests to a DNS server and domain which belong to an attacker. 
+
+    The answer is `DNS Tunneling`.
+
+### Actions on Objectives
+1. What technology is included in Microsoft Windows that can create backup copies or snapshots of files or volumes on the computer, even when they are in use? 
+
+    The answer is `Shadow Copy`.
+
+### Practice Analysis
+1. What is the flag after you complete the static site?
+
+    Here the correct answer to get the flag:
+
+    ![alt text](<Assets/Cyber Kill Chain - 1.png>)
+
+    The flag is `THM{7HR347_1N73L_12_4w35om3}`.
