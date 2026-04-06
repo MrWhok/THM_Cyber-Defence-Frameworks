@@ -4,6 +4,7 @@
 1. [Pyramid Of Pain](#pyramid-of-pain)
 2. [Cyber Kill Chain](#cyber-kill-chain)
 3. [Unified Kill Chain](#unified-kill-chain)
+4. [MITRE](#mitre)
 
 ## Pyramid Of Pain
 ### Hash Values
@@ -219,3 +220,75 @@
 1. Match the scenario prompt to the correct phase of the Unified Kill Chain to reveal the flag at the end. What is the flag?
 
     The flag is `THM{UKC_SCENARIO}`.
+
+
+## MITRE
+### ATT&CK Framework
+1. What Tactic does the Hide Artifacts technique belong to in the ATT&CK Matrix?
+
+    The answer is `Defense Evasion`.
+
+2. Which ID is associated with the Create Account technique?
+
+    The answer is `T1136`.
+
+### ATT&CK in Operation
+1. In which country is Mustang Panda based?
+
+    The answer is `China`.
+
+2. Which ATT&CK technique ID maps to Mustang Panda’s Reconnaissance tactics?
+
+    The answer is `T1598`.
+
+3. Which software is Mustang Panda known to use for Access Token Manipulation?
+
+    The answer is `Cobalt Strike`.
+
+### ATT&CK for Threat Intelligence
+1. Which APT group has targeted the aviation sector and has been active since at least 2013?
+
+    The answer is `APT33`.
+
+2. Which ATT&CK sub-technique used by this group is a key area of concern for companies using Office 365?
+
+    The answer is `Cloud Accounts`.
+
+3. According to ATT&CK, what tool is linked to the APT group and the sub-technique you identified?
+
+    The answer is `Ruler`.
+
+4. Which mitigation strategy advises removing inactive or unused accounts to reduce exposure to this sub-technique?
+
+    The answer is `User Account Management`.
+
+5. What Detection Strategy ID would you implement to detect abused or compromised cloud accounts?
+
+    The answer is `DET0546`.
+
+### Cyber Analytics Repository
+1. Which ATT&CK Tactic is associated with CAR-2019-07-001 (opens in new tab)?
+
+    The answer is `Defense Evasion`.
+
+2. What is the Analytic Type for Access Permission Modification?
+
+    The answer is `Situational Awareness`.
+
+### MITRE D3FEND Framework
+1. Which sub-technique of User Behavior Analysis (opens in new tab) would you use to analyze the geolocation data of user logon attempts?
+
+    The answer is `User Geolocation Logon Pattern Analysis`.
+
+2. Which digital artifact does this sub-technique rely on analyzing?
+
+    The answer is `Network Traffic`.
+
+### Other MITRE Projects
+1. What technique ID is associated with Scrape Blockchain Data (opens in new tab) in the AADAPT framework?
+
+    The answer is `ADT3025`.
+
+2. Which tactic does LLM Prompt Obfuscation (opens in new tab) belong to in the ATLAS framework?
+
+    The answer is `Defense Evasion`.
