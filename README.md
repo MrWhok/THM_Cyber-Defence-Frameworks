@@ -3,6 +3,7 @@
 ## Table of Contents
 1. [Pyramid Of Pain](#pyramid-of-pain)
 2. [Cyber Kill Chain](#cyber-kill-chain)
+3. [Unified Kill Chain](#unified-kill-chain)
 
 ## Pyramid Of Pain
 ### Hash Values
@@ -138,3 +139,83 @@
     ![alt text](<Assets/Cyber Kill Chain - 1.png>)
 
     The flag is `THM{7HR347_1N73L_12_4w35om3}`.
+
+## Unified Kill Chain
+### What is a "Kill Chain"
+1. Where does the term "Kill Chain" originate from?
+
+    The answer is `Military`.
+
+### What is "Threat Modeling"
+1. What is the technical term for a piece of software or hardware in IT (Information Technology?)
+
+    The answer is `Asset`.
+
+### Introducing the Unified Kill Chain
+1. In what year was the Unified Kill Chain framework released?
+
+    The answer is `2017`.
+
+2. According to the Unified Kill Chain, how many phases are there to an attack?
+
+    The answer is `18`.
+
+3. What is the name of the attack phase where an attacker employs techniques to evade detection?
+
+    The answer is `Defense Evasion`.
+
+4. What is the name of the attack phase where an attacker employs techniques to remove data from a network?
+
+    The answer is `Exfiltration`.
+
+5. What is the name of the attack phase where an attacker achieves their objectives?
+
+    The answer is `Objectives`.
+
+### Goal: In (Initial Foothold)
+1. What is an example of a tactic to gain a foothold using emails?
+
+    The answer is `Phishing`.
+
+2. Impersonating an employee to request a password reset is a form of what?
+
+    The answer is `Social Engineering`.
+
+3. An adversary setting up the Command & Control server is what phase of the Unified Kill Chain?
+
+    The answer is `Weaponization`.
+
+4. Exploiting a vulnerability present on a system is what phase of the Unified Kill Chain?
+
+    The answer is `Exploitation`.
+
+5. Moving from one system to another is an example of?
+
+    The answer is `Pivoting`.
+
+6. Leaving behind a malicious service that allows the adversary to log back into the target is what?
+
+    The answer is `Persistence`.
+
+### Goal: Through (Network Propagation)
+1. As a SOC analyst, you pick up an alert pointing to failed logins from an administrator account. What phase of the Unified Kill Chain would an attacker be seeking to achieve?
+
+    The answer is `Privilege Escalation`.
+
+2. Mimikatz, a known post-exploitation tool, was detected on the IT Manager's workstation. The Security logs show that the tool was attempting to dump OS and user secrets. Which Unified Kill Chain phase does this activity correspond to?
+
+    The answer is `Credential Access`.
+
+### Goal: Out (Actions on Objectives)
+1. While monitoring the network as a SOC analyst, you observe a big traffic spike. Most of the network traffic is sent to an unknown, suspicious IP address. What Unified Kill Chain phase could describe this activity?
+
+    The answer is `Exfiltration`.
+
+2. Personally identifiable information (PII) has been released to the public by an adversary. Your organisation is facing reputational losses and scrutiny for the breach. What part of the CIA triad would be affected by this action?
+
+    The answer is `Confidentiality`.
+
+### Practical
+1. Match the scenario prompt to the correct phase of the Unified Kill Chain to reveal the flag at the end. What is the flag?
+
+    The flag is `THM{UKC_SCENARIO}`.
