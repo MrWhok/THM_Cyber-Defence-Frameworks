@@ -5,6 +5,7 @@
 2. [Cyber Kill Chain](#cyber-kill-chain)
 3. [Unified Kill Chain](#unified-kill-chain)
 4. [MITRE](#mitre)
+5. [Summit](#summit)
 
 ## Pyramid Of Pain
 ### Hash Values
@@ -292,3 +293,33 @@
 2. Which tactic does LLM Prompt Obfuscation (opens in new tab) belong to in the ATLAS framework?
 
     The answer is `Defense Evasion`.
+
+### Summit
+#### Challenge
+1. What is the first flag you receive after successfully detecting sample1.exe?
+
+    We can analyze the sample1.exe by uploading and submitting it to the malware sandbox. It gave hash values. We can go to `manage hashes` section and block the hash value of the sample1.exe. The flag is `THM{f3cbf08151a11a6a331db9c6cf5f4fe4}`.
+
+2. What is the second flag you receive after successfully detecting sample2.exe?
+
+    We can analyze the sample2.exe by uploading and submitting it to the malware sandbox. It gave analyze about suspicious network activity. We can go to `Firewall Rule Manager` section and block the IP address that the sample2.exe is communicating with. The flag is `THM{2ff48a3421a938b388418be273f4806d}`.
+
+3. What is the third flag you receive after successfully detecting sample3.exe?
+
+    We can analyze the sample3.exe by uploading and submitting it to the malware sandbox. It gave analyze about suspicious domain name. We can go to `DNS Rule Manager` section and block the domain name that the sample3.exe is communicating with. The flag is `THM{4eca9e2f61a19ecd5df34c788e7dce16}`.
+
+4. What is the fourth flag you receive after successfully detecting sample4.exe?
+
+    We can analyze the sample4.exe by uploading and submitting it to the malware sandbox. It gave analyze about suspicious registry key modification. We can go to `Sigma Rule Builder` section and add rule to detect the registry key modification. The flag is `THM{c956f455fc076aea829799c0876ee399}`.
+
+5. What is the fifth flag you receive after successfully detecting sample5.exe?
+
+    We can analyze the sample5.exe by uploading and submitting it to the malware sandbox. It gave analyze about suspicious file connection. The pentester also gave us connection log from previous victim tester. It has same interval time and the size bytes.
+
+    ![alt text](<Assets/Summit - 1.png>)
+
+    We can go to `Sigma Rule Builder` section and add rule to detect the file connection. The flag is `THM{46b21c4410e47dc5729ceadef0fc722e}`.
+
+6. What is the final flag you receive from Sphinx?
+
+    We can analyze the sample6.exe by uploading and submitting it to the malware sandbox. It gave analyze about suspicious process spawning. The pentester also gave us command log. We can specify to detect the process spawning with the same command line `dir c:\ >> %temp%\exfiltr8.log`. The flag is `THM{c8951b2ad24bbcbac60c16cf2c83d92c}`.
